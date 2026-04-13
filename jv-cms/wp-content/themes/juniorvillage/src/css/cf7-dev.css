@@ -1,0 +1,56 @@
+/* CF7 修正 */
+
+.wpcf7 span.wpcf7-not-valid-tip,
+.screen-reader-response{display: none;}
+
+.wpcf7 .wpcf7-not-valid {
+  display: inline-block;
+  background: rgba(242,222,222,1) !important;
+  }
+
+.wpcf7 .wpcf7-response-output{
+  width: 100%;
+  max-width: 810px;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 10px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+  box-sizing: border-box;
+  }
+.wpcf7 .wpcf7-validation-errors,
+.wpcf7 .wpcf7-mail-sent-ng {
+  color: rgba(185,74,72,1);
+  background-color: rgba(242,222,222,1);
+  border: 1px solid rgba(238,211,215,1);
+  }
+.wpcf7 .wpcf7-mail-sent-ok {
+  display: none !important;
+  color: #3A87AD;
+  background-color: #D9EDF7;
+  border: 1px solid #BCE8F1;
+  }
+
+input[readonly="readonly"]{border: 0;}
+textarea[readonly="readonly"]{
+  border: 0;
+  resize: none;
+  }
+.wpcf7c-conf{background: none;}
+span.wpcf7-list-item {
+  display: inline-block;
+  margin: 0 1em 0 0 !important;
+  }
+
+.custom-wpcf7c-confirmed .fl_body_note{display: none;}
+.custom-wpcf7c-confirmed .fl_input_blc{margin: 0;}
+.custom-wpcf7c-confirmed .form-body input[type="text"],
+.custom-wpcf7c-confirmed .form-body input[type="email"],
+.custom-wpcf7c-confirmed .form-body input[type="tel"],
+.custom-wpcf7c-confirmed .form-body select,
+.custom-wpcf7c-confirmed .form-body textarea{
+  border: 1px solid rgba(204,204,204,1);
+  background-color: rgba(250,250,250,1);
+  }

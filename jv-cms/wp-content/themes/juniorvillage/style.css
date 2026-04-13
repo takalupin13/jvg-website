@@ -1,0 +1,167 @@
+/*
+Theme Name: ジュニアビレッジ
+Theme URI: https://www.glocal-ds.co.jp/jv/
+Author: Passo Grafix
+Author URI: 
+Description: 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain:  Theme
+*/
+
+.top-sns__body2{
+  margin-top:40px;
+  position:relative;
+}
+.top-sns__body2 a{
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  z-index:2;
+  display:block;
+}
+.top-sns__body2 a:hover~iframe{
+  opacity:0.7;
+}
+.header-nav__item p {
+  white-space:nowrap;
+}
+.instagram-icon {
+  background-image: url(src/images/top/instagram.png);
+  margin-right: 19px;
+}
+
+.instagram-icon:hover {
+  background-image: url(src/images/top/instagram-hover.png);
+}
+
+/*old*/
+.page-head{
+  width: 100%;
+  height: 140px;
+  background-color: rgba(140,198,63,1);
+  position: relative;
+  }
+  .page-head__txt{
+    color: rgba(255,255,255,1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .page-head__txt-eng{
+      font-size: 40px;
+      font-style: italic;
+      font-weight: bold;
+      line-height: 1;
+      text-align: center;
+      }
+    .page-head__txt-jp{
+      min-width: 160px;
+      margin-top: 10px;
+      padding: 10px 10px 0;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,1);
+      }
+
+.page-contents{margin-top: 60px;}
+.privacy-detail {
+  padding: 0 20px 60px;
+  font-size: 14px;
+}
+.page-contents__body-inner {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.more-btn__blc{}
+  .more-btn__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 30px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .3s;
+    box-sizing: border-box;
+    }
+    .more-btn__link.-ex_wide{width: 370px;}
+    .more-btn__link.-wide{width: 220px;}
+    .more-btn__link.-narrow{width: 170px;}
+    .more-btn__link.-blk{
+      border: 1px solid rgba(0,0,0,1);
+      background-color: rgba(0,0,0,1);
+      }
+      .more-btn__link.-blk:hover{background-color: rgba(0,0,0,0);}
+    .more-btn__link.-grn{
+      border: 1px solid rgba(140,198,63,1);
+      background-color: rgba(140,198,63,1);
+      }
+      .more-btn__link.-grn:hover{background-color: rgba(140,198,63,0);}
+    .more-btn__link.-wht{
+      border: 1px solid rgba(255,255,255,1);
+      background-color: rgba(255,255,255,1);
+      }
+      .more-btn__link.-wht:hover{background-color: rgba(140,198,63,0);}
+
+    .more-btn__txt{
+      padding-left: 15px;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 1.2;
+      color: rgba(255,255,255,1);
+      position: relative;
+      }
+      .-wht .more-btn__txt{color: rgba(0,0,0,1);}
+      .more-btn__link.-blk:hover .more-btn__txt{color: rgba(0,0,0,1);}
+      .more-btn__link.-grn:hover .more-btn__txt{color: rgba(140,198,63,1);}
+      .more-btn__link.-wht:hover .more-btn__txt{color: rgba(255,255,255,1);}
+      .more-btn__txt::before{
+        content: "";
+        width: 6px;
+        height: 100%;
+        background-image: url(https://jvglocal.com/jv-cms/wp-content/themes/images/common/arrow-r_right_wht.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        }
+        .-wht .more-btn__txt::before{background-image: url(https://jvglocal.com/jv-cms/wp-content/themes/images/common/arrow-r_right_blk.svg);}
+        .more-btn__link.-blk:hover .more-btn__txt::before{background-image: url(https://jvglocal.com/jv-cms/wp-content/themes/images/common/arrow-r_right_blk.svg);}
+        .more-btn__link.-grn:hover .more-btn__txt::before{background-image: url(https://jvglocal.com/jv-cms/wp-content/themes/images/common/arrow-r_right_grn.svg);}
+        .more-btn__link.-wht:hover .more-btn__txt::before{background-image: url(https://jvglocal.com/jv-cms/wp-content/themes/images/common/arrow-r_right_wht.svg);}
+
+@media screen and (max-width: 768px) {
+  .top-report__head {
+    flex-direction: row !important;
+  }
+}
+.report-tag__box.common-tag .report-tag.hov {
+  background: #fff;
+  border: 1px solid #000;
+}
+.report-tag__box.common-tag .report-tag.hov p {
+  color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+

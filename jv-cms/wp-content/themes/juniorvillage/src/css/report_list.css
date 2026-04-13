@@ -1,0 +1,162 @@
+@charset "utf-8";
+
+.report-blc{
+  padding: 60px 20px 40px;
+  background-color: rgba(239,239,239,1);
+  box-sizing: border-box;
+  text-align: center;
+  }
+  .report-cat{margin-top: 35px;}
+    .report-cat__list{
+      display: flex;
+      justify-content: center;
+      }
+      .report-cat__item{width: 155px;}
+        .report-cat__item:not(:last-of-type){margin-right: 20px;}
+        .report-cat__link{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 28px;
+          font-size: 16px;
+          font-weight: bold;
+          color: rgba(255,255,255,1);
+          background-color: rgba(137,195,63,1);
+          transition: .3s;
+          }
+          .report-cat__link:hover{opacity: .7;}
+          
+  .report__list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    }
+    .report-blc .report__list{margin: 25px auto 0;}
+    .report-item{
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(137,195,63,1);
+      }
+      .report-blc .report-item{
+        width: calc((100% - 60px) / 3);
+        text-align: left;
+        }
+        .report-blc .report-item:not(:nth-of-type(3n+3)){margin-right: 30px;}
+      .post-blc__left .report-item{width: calc((100% - 20px) / 2);}
+        .post-blc__left .report-item:not(:nth-of-type(2n+2)){margin-right: 20px;}
+
+      .report_link{
+        display: flex;
+        flex-direction: column;
+        transition: .3s
+        }
+      .report_link:hover{opacity: .7;}
+        .report_data{
+          order: 0;
+          display: flex;
+          justify-content: space-between;
+          color: rgba(77,77,77,1);
+          }
+          .report_data-cat{
+            font-size: 16px;  
+            font-weight: 500;
+            line-height: 1;
+            }
+          .report_data-date{
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 1;
+            }
+        .report_fig{
+          order: 1;
+          margin-top: 10px;
+          border: 2px solid rgba(255,255,255,1);
+          }
+        .report-ttl{
+          order: 2;
+          margin-top: 10px;
+          font-weight: bold;
+          line-height: 1.4;
+          }
+          .report-blc .report-ttl{font-size: 18px;}
+          .post-blc__left .report-ttl{font-size: 16px;}
+
+@media screen and (max-width: 1100px) {
+
+.report-blc .report-item{width: calc((100% - 40px) / 3);}
+  .report-blc .report-item:not(:nth-of-type(3n+3)){margin-right: 20px;}
+
+}/* max-width:1100px */
+
+@media screen and (max-width: 960px) {
+
+/* report */    
+.report-blc{padding: 50px 20px 40px;}
+  .report-cat{margin-top: 25px;}
+    .report-cat__item{width: 130px;}
+      .report-cat__link{
+        height: 24px;
+        font-size: 14px;
+        }
+        .report_data-cat{font-size: 14px;}
+        .report_data-date{font-size: 12px;}
+        .report_fig{margin-top: 10px;}
+        .report-ttl{
+          margin-top: 10px;
+          font-size: 16px;
+          }
+          .report-blc .report-ttl{font-size: 16px;}
+
+}/* max-width:960px */
+
+@media screen and (max-width: 800px) {
+  
+.report-cat__item{width: 110px;}
+  .report-cat__link{
+    height: 22px;
+    font-size: 13px;
+    }
+    .report-ttl{font-size: 14px;}
+    .report-blc .report-ttl{font-size: 14px;}
+
+}/* max-width:800px */      
+  
+@media screen and (max-width: 700px) {
+
+.report-blc .report-item{width: calc((100% - 20px) / 2);}
+  .report-blc .report-item:not(:nth-of-type(3n+3)){margin-right: 0;}
+  .report-blc .report-item:not(:nth-of-type(2n+2)){margin-right: 20px;}
+
+}/* max-width:700px */
+
+@media screen and (max-width: 560px) {
+
+.report-cat__list{
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 310px;
+  margin: 0 auto;
+  }
+  .report-cat__item{
+    width: calc((100% - 15px) / 2);
+    max-width: 150px;
+    margin-bottom: 10px;
+    }
+  .report-cat__item:not(:last-of-type){margin-right: 0;}
+  .report-cat__item:nth-of-type(2n+1){margin-right: 10px;}
+
+  .report__list{margin: 15px auto 0;}
+  .report-item:not(:nth-of-type(2n+2)){margin-right: 15px;}
+  .report-ttl{
+    margin-top: 5px;
+    font-size: 13px;
+    }
+    .report-blc .report-ttl{
+      margin-top: 5px;
+      font-size: 13px;
+      }
+  
+}/* max-width:560px */

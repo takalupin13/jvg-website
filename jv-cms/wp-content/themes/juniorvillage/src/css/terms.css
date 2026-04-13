@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+.privacy-detail{
+  padding: 0 20px 60px;
+  font-size: 14px;
+  }
+  .privacy-detail__inner{max-width: 700px;}
+    .privacy-detail__ttl{
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      }
+    .privacy-intr{line-height: 1.8;}
+      .privacy-list{margin-top: 50px;}
+        .privacy-item:not(:first-of-type){margin-top: 30px;}
+          .privacy-head{
+            padding-bottom: 15px;
+            font-size: 16px;
+            font-weight: 500;
+            color: rgba(140,198,63,1);
+            line-height: 1;
+            border-bottom: 1px solid rgba(140,198,63,1);
+            }
+          .privacy-body{
+            margin-top: 10px;
+            font-size: 13px;
+            }
+            .privacy-body__list{margin-top: 20px;}
+            .privacy-body__list.-onttl{margin-top: 0;}
+              .privacy-body__list-item{
+                position: relative;
+                padding-left: 30px;
+                }
+              .privacy-body__numbering{
+                position: absolute;
+                top: 0;
+                left: -3px;
+                }
+              .privacy-body__list-item:not(:last-of-type){margin-bottom: 5px;}
+
+  .privacy-enactment{margin-top: 40px;}
+  
+  .privacy-body__ttl{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    }
+
+.term-note{
+  margin-top: 50px; 
+  font-size: 13px;
+  }
+  .term-note__ttl{
+    font-size: 16px;
+    font-weight: bold;
+    }
+  .term-note__intr{}
+  .term-note__desc{
+    margin-top: 30px;
+    border-collapse: collapse;
+    }
+    .term-note__item{
+      border: solid 1px black;
+      text-align: center;
+      }
+
+@media screen and (max-width: 560px) {
+
+.privacy-list{margin-top: 30px;}
+  .privacy-head{
+    padding-bottom: 10px;
+    font-size: 14px;
+    }
+.privacy-enactment{margin-top: 30px;}
+
+.privacy-body__ttl{
+  margin-top: 20px;
+  font-size: 14px;
+  }
+.term-note{margin-top: 30px;}
+  .term-note__ttl{font-size: 15px;}
+
+}/* max-width:560px */
